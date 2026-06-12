@@ -6,8 +6,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "student-reader",
-    "version": "1.0.0"
+    "productName": "app",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
@@ -15,23 +15,40 @@
     },
     "bundle": {
       "active": true,
-      "identifier": "com.sharif.studentreader",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ]
+      "identifier": "com.tauri.dev",
+      "icon": [],
+      "resources": [],
+      "copyright": "",
+      "shortDescription": "",
+      "longDescription": "",
+      "deb": {
+        "depends": [],
+        "conflicts": [],
+        "provides": [],
+        "replaces": []
+      },
+      "macOS": {
+        "frameworks": [],
+        "minimumSystemVersion": "",
+        "exceptionDomain": "",
+        "signingIdentity": "",
+        "entitlements": null,
+        "hardenedRuntime": false
+      },
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
     },
     "windows": [
       {
-        "fullscreen": false,
+        "title": "Tauri App",
+        "width": 800,
+        "height": 600,
         "resizable": true,
-        "width": 1200,
-        "height": 800,
-        "title": "Student Reader"
+        "fullscreen": false
       }
     ]
   }
-}
+}}
