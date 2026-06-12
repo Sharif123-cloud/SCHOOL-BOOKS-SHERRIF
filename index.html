@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reader</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #F9F6F0;
+            color: #1A4A4A;
+        }
+        #auth { text-align: center; margin-top: 50px; }
+        #auth input { padding: 10px; margin: 10px; width: 250px; }
+        #auth button { padding: 10px 20px; background: #1A4A4A; color: white; border: none; cursor: pointer; }
+        .hidden { display: none; }
+        #app { max-width: 800px; margin: 0 auto; }
+        #library { margin-bottom: 20px; }
+        .book { background: white; padding: 10px; margin: 5px; border-radius: 8px; cursor: pointer; }
+        #reader { border-top: 2px solid #E6A157; padding-top: 20px; }
+        #search-box { margin: 10px 0; }
+        button { background: #E6A157; border: none; padding: 5px 10px; margin: 2px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<div id="auth">
+    <h2>Student Reader</h2>
+    <input type="password" id="password" placeholder="Enter master password">
+    <button id="unlock">Unlock</button>
+    <p id="error" style="color:red" class="hidden">Incorrect password. Case-sensitive.</p>
+</div>
+<div id="app" class="hidden">
+    <h1>📚 My Library</h1>
+    <button id="importBtn">+ Import PDF/EPUB</button>
+    <div id="library"></div>
+    <div id="reader" class="hidden">
+        <h3 id="bookTitle"></h3>
+        <div id="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document">
+            <button id="searchPrev">◀</button>
+            <button id="searchNext">▶</button>
+            <span id="searchCount"></span>
+        </div>
+        <div id="content" style="border:1px solid #ccc; padding:15px; min-height:400px;"></div>
+        <div>
+            <button id="prevPage">◀ Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next ▶</button>
+        </div>
+        <button id="bookmarkBtn">🔖 Bookmark</button>
+        <button id="notesBtn">📝 Note</button>
+        <button id="highlightBtn">✍️ Highlight</button>
+        <button id="focusBtn">🎯 Focus Mode</button>
+        <button id="themeBtn">🌙 Dark Theme</button>
+    </div>
+</div>
+<script>
+    // This is a simplified frontend that will be replaced with full Tauri version below
+    console.log("Waiting for Rust backend...");
+</script>
+</body>
+</html>
