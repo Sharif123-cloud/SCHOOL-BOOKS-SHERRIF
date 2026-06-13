@@ -43,12 +43,12 @@
     },
     "windows": [
       {
-        "title": "Tauri App",
-        "width": 800,
-        "height": 600,
+        "title": "Student Reader",
+        "width": 1200,
+        "height": 750,
         "resizable": true,
         "fullscreen": false
       }
     ]
   }
-}}
+}
